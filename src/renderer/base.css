@@ -1,0 +1,163 @@
+/* 设计变量：清新薄荷系 */
+:root {
+  --ink: #1e2b31;
+  --ink-2: #56666f;
+  --ink-3: #8c9aa2;
+  --line: rgba(28, 74, 66, 0.1);
+  --line-strong: rgba(28, 74, 66, 0.16);
+  --warn: #e2784f;
+  --warn-soft: #fff2ea;
+
+  --acc: #22c1a0;
+  --acc-deep: #12a284;
+  --acc-soft: #e4faf3;
+  --acc-ghost: rgba(34, 193, 160, 0.1);
+
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 11px;
+
+  --shadow-card: 0 12px 32px rgba(17, 74, 64, 0.1), 0 2px 6px rgba(17, 74, 64, 0.05);
+  --shadow-float: 0 20px 48px rgba(15, 70, 60, 0.2), 0 4px 12px rgba(15, 70, 60, 0.1);
+
+  --font: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --glass: 0.92;
+}
+
+body[data-accent='mint'] {
+  --acc: #22c1a0;
+  --acc-deep: #12a284;
+  --acc-soft: #e4faf3;
+  --acc-ghost: rgba(34, 193, 160, 0.1);
+}
+
+body[data-accent='sky'] {
+  --acc: #4aa8f0;
+  --acc-deep: #2f86cc;
+  --acc-soft: #e8f4ff;
+  --acc-ghost: rgba(74, 168, 240, 0.1);
+}
+
+body[data-accent='peach'] {
+  --acc: #f5955f;
+  --acc-deep: #d9723a;
+  --acc-soft: #fff1e8;
+  --acc-ghost: rgba(245, 149, 95, 0.12);
+}
+
+body[data-accent='lilac'] {
+  --acc: #a08cf0;
+  --acc-deep: #7f68d8;
+  --acc-soft: #f2edff;
+  --acc-ghost: rgba(160, 140, 240, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: var(--font);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--acc-ghost);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 80, 70, 0.16);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 80, 70, 0.28);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 通用按钮 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-2);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--acc) 0%, var(--acc-deep) 100%);
+  border-color: transparent;
+  box-shadow: 0 6px 16px var(--acc-ghost);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  box-shadow: 0 10px 22px var(--acc-ghost);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+}
+
+.btn-ghost:hover {
+  background: var(--acc-ghost);
+  border-color: transparent;
+}
+
+.btn-sm {
+  height: 28px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 8px;
+}

@@ -1,0 +1,21 @@
+# 依赖与构建产物
+node_modules/
+share/
+dist/
+out/
+.share-build/
+
+# 本机运行数据与调试残留
+data/
+.docshot/
+.testprofile/
+--reset/
+startup.log
+*.log
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

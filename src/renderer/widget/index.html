@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'"
+    />
+    <title>Nook · 桌面</title>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="widget.css" />
+  </head>
+  <body data-accent="mint">
+    <div class="root">
+      <section class="card" id="card">
+        <header class="w-head" id="dragZone">
+          <div class="w-date">
+            <span class="w-dot"></span>
+            <span id="dateText">今天</span>
+            <span class="w-week" id="weekText"></span>
+          </div>
+          <div class="w-tools">
+            <button class="tool pin" data-act="pin" title="显示在窗口最上层">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.2 3.4h5.6l-.9 4.6 3 2.7v1.9H7.1v-1.9l3-2.7-.9-4.6z" />
+                <path d="M12 12.6v7.8" />
+              </svg>
+            </button>
+            <button class="tool" data-act="add" title="添加任务">＋</button>
+            <button class="tool" data-act="panel" title="打开计划表">☰</button>
+            <button class="tool tool-close" data-act="hide" title="隐藏桌面组件">×</button>
+          </div>
+        </header>
+
+        <div class="w-progress" id="progressRow">
+          <div class="bar"><span id="barFill"></span></div>
+          <span class="count" id="countText">0/0</span>
+        </div>
+
+        <main class="w-body" id="list"></main>
+
+        <footer class="w-foot" id="footHint">双击标题栏打开计划表</footer>
+
+        <div class="resize-grip" title="拖动右下角可调整大小"></div>
+        <div class="cheer-layer" id="cheerLayer"></div>
+        <div class="spark-layer" id="sparkLayer"></div>
+      </section>
+    </div>
+    <script src="../shared/i18n.js"></script>
+    <script src="../shared/parsePlan.js"></script>
+    <script src="widget.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+# 统一换行：仓库内一律 LF，避免跨平台整文件 diff
+* text=auto eol=lf
+
+# 二进制资源不做转换
+*.png binary
+*.ico binary
+*.zip binary
+*.exe binary

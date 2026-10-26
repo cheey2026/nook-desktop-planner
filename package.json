@@ -1,0 +1,17 @@
+{
+  "name": "nook",
+  "productName": "Nook",
+  "version": "1.0.0",
+  "description": "Nook：贴在桌面一角的每日计划与超期提醒，透明组件、一点即完成",
+  "main": "src/main.js",
+  "author": "Nook",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "shot": "electron . --shot"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "resedit": "^3.1.0"
+  }
+}
