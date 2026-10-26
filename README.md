@@ -1,5 +1,9 @@
 # Nook
 
+[![Release](https://img.shields.io/github/v/release/cheey2026/nook-desktop-planner?label=release)](https://github.com/cheey2026/nook-desktop-planner/releases/latest)
+[![License](https://img.shields.io/github/license/cheey2026/nook-desktop-planner)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%2064--bit-0078d4)](https://github.com/cheey2026/nook-desktop-planner/releases/latest)
+
 > 贴在桌面一角的每日计划。
 
 Nook 是一个常驻桌面角落的小计划表：写今天的计划、盯超期的事，点一下圆圈就算做完，旁边的透明小组件会顺口夸你一句。Electron 33 + 原生 HTML/CSS/JS，没有前端框架，也不依赖任何运行时库；不配 AI 时完全离线。
